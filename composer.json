@@ -1,0 +1,57 @@
+{
+    "name": "nomiscz/laravel-breadcrumbs",
+    "description": "Breadcrumbs made easy for Laravel.",
+    "keywords": ["laravel", "breadcrumbs"],
+    "license": "MIT",
+    "support": {
+      "issues": "https://github.com/nomiscz/laravel-breadcrumbs/issues",
+      "source": "https://github.com/nomiscz/laravel-breadcrumbs"
+    },
+    "authors": [
+        {
+            "name": "NomisCZ",
+            "email": "nomiscz@outlook.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Dwight Watson",
+            "email": "dwight@studentservices.com.au",
+            "role": "Original author"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/routing": "^7.0",
+        "illuminate/support": "^7.0",
+        "illuminate/view": "^7.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "NomisCZ\\Breadcrumbs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NomisCZ\\Breadcrumbs\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NomisCZ\\Breadcrumbs\\ServiceProvider"
+            ],
+            "aliases": {
+                "Breadcrumbs": "NomisCZ\\Breadcrumbs\\Facade"
+            }
+        }
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
