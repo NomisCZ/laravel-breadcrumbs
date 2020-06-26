@@ -42,7 +42,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "NomisCZ\\Breadcrumbs\\ServiceProvider"
+              "NomisCZ\\Breadcrumbs\\BreadcrumbsServiceProvider"
             ],
             "aliases": {
                 "Breadcrumbs": "NomisCZ\\Breadcrumbs\\Facade"

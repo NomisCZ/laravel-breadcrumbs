@@ -5,7 +5,7 @@ namespace NomisCZ\Breadcrumbs;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
+class BreadcrumbsServiceProvider extends BaseServiceProvider implements DeferrableProvider
 {
     /**
      * Register the service provider.
@@ -14,7 +14,7 @@ class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/breadcrumbs.php', 'breadcrumbs');
+        $this->mergeConfigFrom(__DIR__ . '/../config/breadcrumbs.php', 'breadcrumbs');
 
         $this->app->singleton('breadcrumbs', Manager::class);
     }
@@ -27,14 +27,14 @@ class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/breadcrumbs.php' => config_path('breadcrumbs.php'),
+            __DIR__ . '/../config/breadcrumbs.php' => config_path('breadcrumbs.php'),
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/../views' => resource_path('views/vendor/breadcrumbs')
+            __DIR__ . '/../views' => resource_path('views/vendor/breadcrumbs')
         ], 'views');
 
-        $this->loadViewsFrom(__DIR__.'/../views', 'breadcrumbs');
+        $this->loadViewsFrom(__DIR__ . '/../views', 'breadcrumbs');
 
         if (file_exists($file = $this->app['path.base'].'/routes/breadcrumbs.php')) {
             require $file;
