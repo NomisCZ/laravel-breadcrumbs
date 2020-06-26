@@ -1,9 +1,9 @@
 Breadcrumbs for Laravel [Fork]
 =======================
 
-[![License](https://poser.pugx.org/nomiscz/laravel-breadcrumbs/license.svg)](https://packagist.org/packages/nomiscz/laravel-breadcrumbs)
-![Latest Stable Version](https://img.shields.io/packagist/v/nomiscz/laravel-breadcrumbs.svg)
-[![Total Downloads](https://poser.pugx.org/nomiscz/laravel-breadcrumbs/downloads.svg)](https://packagist.org/packages/nomiscz/laravel-breadcrumbs)
+[![Latest Stable Version](https://poser.pugx.org/nomiscz/laravel-breadcrumbs/v)](//packagist.org/packages/nomiscz/laravel-breadcrumbs)
+[![Total Downloads](https://poser.pugx.org/nomiscz/laravel-breadcrumbs/downloads)](//packagist.org/packages/nomiscz/laravel-breadcrumbs)
+[![License](https://poser.pugx.org/nomiscz/laravel-breadcrumbs/license)](//packagist.org/packages/nomiscz/laravel-breadcrumbs)
 
 Breadcrumbs is a simple breadcrumb generator for Laravel that tries to hook into the magic to make it easy to get up and running. It ships with support for Bootstrap 3 and 4 (with 4 the default) but it's easy to drop in your own view instead.
 ## Installation
